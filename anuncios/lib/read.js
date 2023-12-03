@@ -16,7 +16,7 @@ const readFinds = (q) => {
     return new Promise(function (resolve, reject) {
         
         if ("Id_usuario" in q){
-            conn.query('SELECT * FROM anuncios WHERE Id_usuario = ? AND anuncio_status != "removido";', [q.Id_usuario], (err, rows) => {
+            conn.query('SELECT * FROM anuncios WHERE Id_usuario = ? AND anuncio_status != "removido" ORDER BY anuncio_status;', [q.Id_usuario], (err, rows) => {
                 if (err) 
                   return reject(err);
             
