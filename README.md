@@ -1,6 +1,8 @@
 # BookShire - Lambdas 📚🌳
 
-![Diagrama de funcionamento da API](assets/diagrama.png)
+<div style="text-align:center">
+  ![Diagrama de funcionamento da API](assets/diagrama.png)
+</div>
 
 Serviçoss CRUD AWS Lambda desenvolvidas para API Gateway do BookShire
 
